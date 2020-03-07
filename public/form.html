@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+</head>
+<body>
+
+    <h1>Perform a simple math operation</h1>
+
+    <form action="/math_service" method="GET">
+        <!-- first number -->
+        <input type="text" name="operand1" id="operand1" placeholder="first number">
+        
+        <!-- operation -->
+        <select id="operation" name="operation">
+            <option value="Add">Add</option>
+            <option value="Subtract">Subtract</option>
+            <option value="Multiply">Multiply</option>
+            <option value="Divide">Divide</option>
+        </select>
+
+        <!-- second number -->
+        <input type="text" name="operand2" id="operand2" placeholder="second number">
+
+        <!-- submit -->
+        <input type="submit" value="GET RESULT">
+    </form>
+</body>
+</html>

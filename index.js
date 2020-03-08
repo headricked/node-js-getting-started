@@ -60,9 +60,7 @@ function handleCalculation(request, response) {
       rate = 0.85;
     } else if (weight <= 3.5) {
       rate = 1;
-    } else {
-      
-    }
+    } 
   } else if (type == "metered") {
     if (weight >= 0 && weight <= 1) {
       rate = 0.50;

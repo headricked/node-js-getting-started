@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            padding: 2rem;
+        }
+    </style>
+    <title>Postal Rate Calculator</title>
+</head>
+<body>
+
+    <h1>Postal Rate Calculator</h1>
+
+    <form action="/calculation" method="GET">
+        <!-- weight -->
+        <label for="weight">Ounces</label>
+        <input name="weight" id="weight" type="number" placeholder="0.0" step="0.1" min="0" max="13">
+        
+        <br/><br/>
+
+        <!-- mailType -->
+        <label for="mailType">Mail Type</label>
+        <select id="mailType" name="mailType">
+            <label for="stamped"></label>
+            <option name="stamped" value="stamped">stamped</option>
+
+            <label for="metered"></label>
+            <option name="metered" value="metered">metered</option>
+
+            <label for="flats"></label>
+            <option name="flats" value="flats">flats</option>
+
+            <label for="retail"></label>
+            <option name="retail" value="retail">retail</option>
+        </select>
+
+        <br/><br/>
+
+        <!-- submit -->
+        <input type="submit" value="CALCULATE">
+    </form>
+</body>
+</html>

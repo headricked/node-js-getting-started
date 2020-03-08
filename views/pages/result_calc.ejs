@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Calculation Result</title>
+    <style>
+        body {
+            padding: 2rem;
+        }
+
+        th, td {
+            border: solid 1px #555;
+        }
+
+        td {
+            padding: 1rem;
+        }
+
+        th {
+            padding: 1rem;
+            text-align: right;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculation Result</h1>
+
+    <table>
+        <tr>
+            <th>Mail Type</th>
+            <td><%= type %></td>
+        </tr>
+        <tr>
+            <th>Weight</th>
+            <td><%= weight %> ounces</td>
+        </tr>
+        <tr>
+            <th>Cost</th>
+            <td>$ <%= result %></td>
+        </tr>
+
+    </table>
+
+    <br/><br/>
+
+    <a href="form_rateCalc.html">New Calculation</a>
+    
+</body>
+</html>
